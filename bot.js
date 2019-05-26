@@ -90,4 +90,5 @@ bot.on('message', async message => {
     bot.rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     bot.uId = message.author.id;
 });
+token = os.environ.get ('BOT_TOKEN')
 bot.login(token);
